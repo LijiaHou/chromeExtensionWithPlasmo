@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "FastVisit",
+    "description": "帮助用户在Chrome浏览器中快速访问他们最常访问的网站",
+    "version": "1.0",
+    "background": {
+        "service_worker": "src/service-worker.js"
+    },
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "src/popup.html"
+    },
+    "options_page": "src/options.html"
+}
